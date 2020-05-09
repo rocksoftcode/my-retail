@@ -1,0 +1,11 @@
+{
+  "name": "redsky-mock",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node mock-api.js"
+  },
+  "dependencies": {
+    "express": "~4.16.1"
+  }
+}
