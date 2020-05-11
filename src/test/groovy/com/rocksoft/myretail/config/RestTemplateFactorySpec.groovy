@@ -7,7 +7,7 @@ import spock.lang.Specification
 
 
 class RestTemplateFactorySpec extends Specification {
-	def "Creates RestTemplate using RestTemplateBuilder"() {
+	def 'Creates RestTemplate using RestTemplateBuilder'() {
 		setup:
 		RestTemplateBuilder mockRestTemplateBuilder = Mock()
 		RestTemplateFactory restTemplateFactory = new RestTemplateFactory()

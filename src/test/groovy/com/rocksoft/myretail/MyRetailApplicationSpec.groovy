@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication
 import spock.lang.Specification
 
 class MyRetailApplicationSpec extends Specification {
-	def "Initializes application"() {
+	def 'Initializes application'() {
 		setup:
 		GroovyMock(SpringApplication, global: true)
 

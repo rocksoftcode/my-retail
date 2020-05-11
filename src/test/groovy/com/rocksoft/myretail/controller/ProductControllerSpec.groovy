@@ -15,7 +15,7 @@ import spock.lang.Specification
 
 
 class ProductControllerSpec extends Specification {
-	def "GET request to products/{id} combines RedSky and Database information for product"() {
+	def 'GET request to products/{id} combines RedSky and Database information for product'() {
 		setup:
 		PriceInfoRepository mockRepository = Mock()
 		RedSkyConnector mockConnector = Mock()
@@ -31,7 +31,7 @@ class ProductControllerSpec extends Specification {
 		1 * mockConnector.findById(12345) >> new Product(name: 'FooBar')
 	}
 
-	def "Missing product or price info triggers 404"() {
+	def 'Missing product or price info triggers 404'() {
 		setup:
 		PriceInfoRepository mockRepository = Mock()
 		RedSkyConnector mockConnector = Mock()

@@ -11,7 +11,7 @@ import com.rocksoft.myretail.domain.Product
 import spock.lang.Specification
 
 class RedSkyConnectorSpec extends Specification {
-	def "Calls RedSky endpoint using application properties"() {
+	def 'Calls RedSky endpoint using application properties'() {
 		setup:
 		RestTemplate mockRestTemplate = Mock()
 		RedSkyConnector connector = new RedSkyConnector(restTemplate: mockRestTemplate)
